@@ -42,7 +42,7 @@ def guardarDataset():
 
     f = request.files['archivo']
     nombreArchivo = secure_filename(f.filename)
-    f.save(os.path.join(app.config['UPLOAD_FOLDER'],nombreArchivo))
+    ##f.save(os.path.join(app.config['UPLOAD_FOLDER'],nombreArchivo))
     ruta = './Archivos/'+nombreArchivo
     dataset['archivoDir'] = ruta
     dataset['archivoNombre'] = nombreArchivo

@@ -21,10 +21,10 @@
             {% if datasets %}
             {% for item in datasets %}
             
-            <a href="/descargarArchivo/{{item.archivo_nombre}}" download class="list-group-item list-group-item-action flex-column align-items-start active">
+            <a  class="list-group-item list-group-item-action flex-column align-items-start active">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">Proyecto: {{item.nombre_proyecto}}</h5>
-                    <small>Descargar</small>
+                    
                 </div>
                 <p class="mb-1">Encargado: {{item.encargado}}</p>
                 <small>Tipo de archivo: {{item.tipo_archivo}}</small>
